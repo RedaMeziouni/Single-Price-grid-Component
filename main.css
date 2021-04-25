@@ -8,6 +8,8 @@
 	--yellow: hsl(71, 73%, 54%);
 	--ltgray: hsl(204, 43%, 93%);
 	--grayblue: hsl(218, 22%, 67%);
+	--paddingX: 1.8rem;
+	--paddingY: 1.5rem;
 }
 
 html {
@@ -24,17 +26,31 @@ body {
 	line-height: 1.3;
 	background-color: var(--ltgray);
 	color: var(--grayblue);
+	padding: var(--paddingX);
 }
 
 a {
 	text-decoration: none;
 }
 
+/*Delete the margin for all the headers*/
+h1, h2, h3 {
+	margin-top: 0;
+	line-height: 1.15;
+}
+
 .price {
+	border-radius: 0.5rem;
+	overflow: hidden;
 
 	@media only screen and (min-width: 62.5em) {
 		display: grid;
 	}
+}
+
+/*Setting up padding for the three Divs*/
+.price > * {
+	padding: var(--paddingX) var(--paddingY);
 }
 
 .community {
@@ -56,4 +72,5 @@ a {
 .community p {
 	font-size: 0.85rem;
 	line-height: 1.75;
+	margin-bottom: 0;
 }
