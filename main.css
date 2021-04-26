@@ -4,8 +4,9 @@
 :root {
 	--white: hsl(0, 0%, 100%);
 	--cyan: hsl(179, 62%, 40%);
-	--ltcyan: hsl(179, 62%, 50%);
+	--ltcyan: hsl(179, 62%, 45%);
 	--yellow: hsl(71, 73%, 54%);
+	--dkyellow: hsl(71, 73%, 48%);
 	--ltgray: hsl(204, 43%, 93%);
 	--grayblue: hsl(218, 22%, 67%);
 	--paddingX: 1.8rem;
@@ -78,6 +79,7 @@ p {
 	font-size: 1rem;		
 	color: var(--yellow);
 	font-weight: bold;
+	margin-bottom: 1rem;
 }
 
 .community p {
@@ -122,4 +124,27 @@ p {
 	text-align: center;
 	border-radius: 0.25rem;
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+	transition: background-color opacity 200ms ease;
+}
+
+.subscription a:hover {
+	background-color: var(--dkyellow);
+	opacity: 0.8;
+}
+
+/*Why Us Section*/
+
+.why {
+	background-color: var(--ltcyan);
+}
+
+.why ul {
+	margin-top: 0;
+	padding: 0;
+}
+
+.why ul li {
+	list-style-type: none;
+	font-size: 0.85rem;
+	margin-bottom: 0.2rem;
 }
