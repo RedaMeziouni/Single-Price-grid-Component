@@ -56,9 +56,20 @@ p {
 .price {
 	border-radius: 0.5rem;
 	overflow: hidden;
+	max-width: 40rem;
+	margin: auto;
+}
+/*Media query*/
+@media only screen and (min-width: 62.5em) {
 
-	@media only screen and (min-width: 62.5em) {
+	.price {
 		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, auto);
+	}
+
+	.community {
+		grid-column: 1 / 3;
 	}
 }
 
